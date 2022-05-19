@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <style>
+        .table {
+            /*Para que los campos ocupen el mismo espacio*/
+            table-layout: fixed;
+            width: 100%;
+            text-align: center;
+            /*Posicion del titulo*/
+            caption-side: bottom;
+
+            /*Para espacio del border*/
+            border-spacing: 10px;
+            border:1px solid black;
+
+        }
+        .table_data, .table_head{
+            /*Para espacio entre las celdas*/
+            border-spacing: 10px;
+            border:1px solid black;
+        }
+
+        .table{
+            /*Es para anular el border-spacing*/
+            /*border-collapse: collapse;*/
+            /*Indica que hacer con las celdas que estan vacias*/
+            empty-cells: hide;
+        }
+
+        .table_data{
+            background-color: lightblue;
+        }
+
+        .table-container{
+            overflow-x: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="table-container">
+        <table class="table">
+            <caption>titulo de la tabla</caption>
+            <colgroup>
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+    
+            </colgroup>
+            <thead>
+                <td class="table_head">username</td>
+                <td class="table_head">email</td>
+                <td class="table_head">company</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table_data">luis</td>
+                    <td class="table_data">luis</td>
+                    <td class="table_data">Lorem ipsum dolor sit amet consectetur adipisicing.</td>
+                </tr>
+                <tr>
+                    <td class="table_data">luis</td>
+                    <td class="table_data">luis</td>
+                    <td class="table_data">Lorem ipsum dolor sit amet consectetur adipisicing.</td>
+                </tr>
+                <tr>
+                    <td class="table_data">luis</td>
+                    <td class="table_data"></td>
+                    <td class="table_data">Lorem ipsum dolor sit amet consectetur adipisicing.</td>
+                </tr>
+    
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+
+</html>

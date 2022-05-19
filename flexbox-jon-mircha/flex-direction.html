@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Jon Mircha</title>
+    <style>
+        body {
+            background-color: lightskyblue;
+        }
+        
+        * {
+            padding: 0;
+        }
+        
+        .section {
+            background-color: gray;
+            width: 90%;
+            height: 30vh;
+            box-sizing: border-box;
+            /* justify-content: center;
+            align-items: center; */
+            /*tambien esta inline-flex para que sea caja flex pero seria una caja en linea solo ocuparia su espacio*/
+            display: flex;
+        }
+        
+        .section-2 {
+            /*valor predetermido row*/
+            flex-direction: column;
+        }
+        
+        .section-3 {
+            /*valor predetermido row*/
+            flex-direction: row-reverse;
+        }
+        
+        .section-4 {
+            /*valor predetermido row*/
+            flex-direction: column-reverse;
+        }
+        
+        .section-5 {
+            /*valor predetermido row*/
+            flex-direction: row;
+            /*wrap es para si los hijos tienen un ancho o alto se respeta y los demas se van a la siguiente fila*/
+            /*Define el comportamiento cuando ya no caben*/
+            flex-wrap: wrap;
+        }
+        
+        .article-item {
+            box-sizing: border-box;
+            width: 50%;
+            /* margin: 0 auto; */
+            border: 2px lightcoral solid;
+            background-color: whitesmoke;
+            /* margin: 0 auto; */
+            /* overflow: auto; */
+            /* margin-left: auto;
+            margin-right: auto; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section section-1">
+        <article class="article-item">flex item 1</article>
+        <article class="article-item">flex item 2</article>
+        <article class="article-item">flex item 3</article>
+        <article class="article-item">flex item 4</article>
+        <article class="article-item">Lorem ipsum dolor sit amet.</article>
+
+        <article class="article-item">flex item 6</article>
+
+    </div>
+    <br>
+    <div class="section section-2">
+        <article class="article-item">flex item 1</article>
+        <article class="article-item">flex item 2</article>
+        <article class="article-item">flex item 3</article>
+        <article class="article-item">flex item 4</article>
+        <article class="article-item">Lorem ipsum dolor sit amet.</article>
+
+        <article class="article-item">flex item 6</article>
+
+    </div>
+    <br>
+    <div class="section section-3">
+        <article class="article-item">flex item 1</article>
+        <article class="article-item">flex item 2</article>
+        <article class="article-item">flex item 3</article>
+        <article class="article-item">flex item 4</article>
+        <article class="article-item">Lorem ipsum dolor sit amet.</article>
+
+        <article class="article-item">flex item 6</article>
+
+    </div>
+    <br>
+    <div class="section section-4">
+        <article class="article-item">flex item 1</article>
+        <article class="article-item">flex item 2</article>
+        <article class="article-item">flex item 3</article>
+        <article class="article-item">flex item 4</article>
+        <article class="article-item">Lorem ipsum dolor sit amet.</article>
+
+        <article class="article-item">flex item 6</article>
+
+    </div>
+    <br>
+    <div class="section section-5">
+        <article class="article-item">flex item 1</article>
+        <article class="article-item">flex item 2</article>
+        <article class="article-item">flex item 3</article>
+        <article class="article-item">flex item 4</article>
+        <article class="article-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ducimus in ab vitae at doloremque voluptatibus impedit enim vero ullam.</article>
+
+        <article class="article-item">flex item 6</article>
+
+
+
+    </div>
+
+</body>
+
+</html>

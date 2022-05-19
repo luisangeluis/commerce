@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">  
+<head>    
+	<title>Título de la WEB</title>    
+	<meta charset="UTF-8">
+	<meta name="title" content="Título de la WEB">
+	<meta name="description" content="Descripción de la WEB">    
+	<link href="http://dominio.com/hoja-de-estilos.css" rel="stylesheet" type="text/css"/> 
+
+	<style>
+
+		.label,
+		.input{
+			display: block;
+
+		}
+
+		.input{
+			border-style: solid;
+			border-color: lightgray;
+			border-width: 3px;
+
+		}
+
+
+		.input:enabled{
+			background: lightblue;
+
+		}
+		/*
+    	.input:hover{
+    		background: lightcoral;
+    		border-width: 4px;
+
+
+    	}
+    	*/
+    	
+
+
+    	input:checked+label{
+    		font-size:2em;
+
+    	}
+
+    	.input:in-range{
+    		background: green;
+    	}
+
+    	.input:out-of-range{
+    		background: red;
+    	}
+
+    	.input:required{
+    		background: silver;
+    	}
+
+    	.input:valid{
+    		background:black;
+    		color:white;
+    	}
+
+    	.input:invalid{
+    		background:white;
+
+    	}
+    </style>   
+</head>  
+<body>    
+	<form action="#">
+		<label class="label">:enabled</label>	
+		<input class="input" type="text" name="">
+
+		<label class="label">:disabled</label>	
+		<input class="input" type="text" name="" disabled="">
+
+		<input id="check" class="input" type="checkbox" name="" >
+		<label for="check" class="label">:checked</label>	
+
+
+		<label class="label">:in-range</label>	
+		<input class="input" type="number" name="" min="50" max="60">
+
+		<label class="label">:out-of-range</label>	
+		<input class="input" type="number" name="" min="50">
+
+		<label class="label">:optional</label>	
+		<input class="input" type="text" name="" >
+
+		<label class="label">:required</label>	
+		<input class="input" type="text" name="" required="">
+
+		<label class="label">:valid</label>	
+		<input class="input" type="number" name="" >
+
+		<label class="label">:invalidad</label>	
+		<input class="input" type="number" name="" min="50" max="60">
+
+		<label class="label">:invalid</label>	
+		<input class="input" type="number" name="" min="50" max="60">
+
+
+	</form>  
+
+</body>  
+</html>

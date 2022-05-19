@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .article{
+            border: 1px solid blue;
+            height: 200px;
+            padding: .5em;
+            /*Oculta el contenido que no cabe para que no desborde*/
+            /* overflow: hidden; */
+
+            /*muestra la barra de scroll en x y y*/
+            /* overflow: scroll; */
+
+            /*Muestra el scroll donde haga falta para que no se desborde*/
+            overflow: auto;
+        }
+        /*Sirve para que el texto abrace a la imagen*/
+        .article-float {
+            overflow: hidden;
+            border: 2px solid red;
+        }
+        .article-float img{
+            float: right;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <article class="article">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum reiciendis saepe eligendi sed neque atque reprehenderit labore molestiae, beatae dignissimos.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum reiciendis saepe eligendi sed neque atque reprehenderit labore molestiae, beatae dignissimos.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum reiciendis saepe eligendi sed neque atque reprehenderit labore molestiae, beatae dignissimos.</p>
+
+    </article>    
+
+    <article class="article-float">
+        <img src="/images/homero.png" alt="">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus rerum maxime error neque est autem ipsam officia, adipisci, maiores voluptate pariatur placeat, accusantium deserunt facere molestiae. Corrupti, dolor non.
+        Nam doloribus, facere magnam quis deserunt odio at placeat similique molestias amet tempore autem, vero, velit natus debitis perspiciatis. Ea ad nihil totam quisquam, aspernatur ducimus iusto magnam neque quo?
+        Ipsa doloribus facere nulla temporibus sapiente dignissimos in eveniet labore ullam, assumenda nisi sint itaque quasi nam quo. A soluta distinctio voluptatem voluptas consequuntur non animi expedita? Harum, saepe earum.
+        Nobis assumenda optio, consequatur iusto ducimus est ratione dolores mollitia, sapiente neque sint iure ex quas fugiat illum nulla, fugit ut labore aut dolore laudantium a nemo animi alias! Nam.
+        Doloribus accusamus, cupiditate pariatur natus, porro voluptatum, officiis unde repellat at officia quasi recusandae atque ad. Dicta autem pariatur, explicabo natus illo corrupti maiores alias iusto delectus, rerum cupiditate voluptatibus!</p>        
+    </article>
+</body>
+</html>

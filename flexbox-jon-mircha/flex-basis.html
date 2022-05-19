@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factor de reduccion</title>
+    <style>
+        body {
+            background-color: lightskyblue;
+        }
+        
+        * {
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .section {
+            background-color: lightcoral;
+            width: 90%;
+            height: 20vh;
+            display: flex;
+            /* flex-direction: column; */
+        }
+        
+        .article-item {
+            border: 2px black solid;
+            background-color: lightblue;
+            
+        }
+        .article-item:nth-child(2){
+
+            /*Es el tamaño del main axis, significa que si flex-direction es row hace lo mismo que width y si es column hace lo mismo que height*/
+            /*Tiene mayor especificidad que width y height segun sea la configuracion de flex-direction*/
+            flex-basis: 30px;
+
+
+            background-color: red;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section section-1">
+        <article class="article-item">flex item 1 Lorem, ipsum dolor.</article>
+        <article class="article-item">flex item 2 Lorem, ipsum dolor.</article>
+        <article class="article-item">flex item 3 Lorem, ipsum dolor.</article>
+        <article class="article-item">flex item 4 Lorem, ipsum dolor.</article>
+        <article class="article-item">flex item 5 Lorem, ipsum dolor.</article>
+
+    </div>
+    
+    
+
+
+</body>
+
+</html>

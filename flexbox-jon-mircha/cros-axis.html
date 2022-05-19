@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cros axis</title>
+    <style>
+        body {
+            background-color: lightskyblue;
+        }
+        
+        * {
+            padding: 0;
+        }
+        
+        .section {
+            background-color: gray;
+            width: 90%;
+            height: 20vh;
+            box-sizing: border-box;
+            /* justify-content: center;
+            align-items: center; */
+            /*tambien esta inline-flex para que sea caja flex pero seria una caja en linea solo ocuparia su espacio*/
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+        
+        .section-1 {
+            /* align-items: flex-start; */
+            /* flex-direction: column; */
+            /*En normal el primero (justify-content) se mueve en x y el 2do (align items) en y y cuando 
+            se cambia la direccion se invierten*/
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .section-2 {
+            /* align-items: flex-end; */
+        }
+        
+        .section-3 {
+            /* align-items:baseline; */
+        }
+        
+        .section-4 {
+            /* align-items: center; */
+        }
+        
+        .article-item {
+            box-sizing: border-box;
+            /* width: 20%; */
+            /* margin: 0 auto; */
+            border: 2px lightcoral solid;
+            background-color: whitesmoke;
+            /* margin: 0 auto; */
+            /* overflow: auto; */
+            /* margin-left: auto;
+            margin-right: auto; */
+        }
+        .article-item:nth-child(2){
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section section-1">
+        <article class="article-item">flex item 1</article>
+        <article class="article-item">flex item 2</article>
+        <article class="article-item">flex item 3</article>
+        <article class="article-item">flex item 4</article>
+        <article class="article-item">Lorem ipsum dolor sit amet.</article>
+
+        <article class="article-item">flex item 6</article>
+
+    </div>
+    <br>
+    <div class="section section-2">
+        <article class="article-item">flex item 1</article>
+        <article class="article-item">flex item 2</article>
+        <article class="article-item">flex item 3</article>
+        <article class="article-item">Lorem ipsum dolor sit amet.</article>
+
+        <article class="article-item">flex item 6</article>
+
+    </div>
+    <br>
+    <div class="section section-3">
+        <article class="article-item">flex item 1</article>
+        <article class="article-item">flex item 2</article>
+        <article class="article-item">flex item 3</article>
+        <article class="article-item">flex item 4</article>
+        <article class="article-item">Lorem ipsum dolor sit amet.</article>
+
+        <article class="article-item">flex item 6</article>
+
+    </div>
+    <br>
+    <div class="section section-4">
+        <article class="article-item">flex item 1</article>
+        <article class="article-item">flex item 2</article>
+        <article class="article-item">flex item 3</article>
+        <article class="article-item">flex item 4</article>
+        <article class="article-item">flex item 5</article>
+        <article class="article-item">flex item 6</article>
+        <article class="article-item">flex item 7</article>
+
+        <article class="article-item">Lorem ipsum dolor sit amet.</article>
+
+        <article class="article-item">flex item 6</article>
+
+    </div>
+
+
+</body>
+
+</html>

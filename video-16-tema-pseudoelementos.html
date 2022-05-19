@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+
+	<title>video 16 curso de Dorian</title>
+	<meta name="description" content="The HTML5 Herald">
+	<meta name="author" content="SitePoint">
+
+	<link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+
+	<h1 class="title">Pseudoelementos</h1>
+
+	<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+	<p class="dollar">5</p>
+	<span class="inline">Elemento de linea</span>
+
+</body>
+</html>
+
+<style type="text/css">
+	
+
+.title::first-letter{
+	color:red;
+	font-size: 2em;
+
+}
+
+.text::first-line{
+
+		font-size: 2.5em;
+		color:blue;
+
+}
+
+.dollar::before{
+	content:"$";
+
+}
+
+.dollar::after{
+	content:".00";
+}
+
+
+</style>

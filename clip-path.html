@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip-path</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: gray;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .box_item {
+            width: 400px;
+            height: 400px;
+            background-color: lightcoral;
+            color: black;
+            /* circulo posicionado con porcentajes */
+            /* clip-path: circle(100px at 2%); */
+
+            /* circulo posicionado con palabras clave puede llevar 1 o 2 */
+            /* clip-path: circle(100px at top left); */
+            
+            /* circulo posicionado con numeros*/
+            /* clip-path: circle(100px at 0 0); */
+
+            /*Para elipse se necesitan dos valores, tambien se puede posicionar con palabras clave*/
+            /* clip-path: ellipse(100px 50px at bottom); */
+
+            /*Para dibujar bordes, al parecer no afecta al contenido, recibe de uno a 4 valores, con round redondea las esquinas tambien acepta hasta 4 valores*/
+            /* clip-path: inset(20px 40px 100px round 10px 50px); */
+            
+            /*Para dibujar poligonos hay que pasar 3 valores en pares que son los puntos de cada poligoto*/
+            /* clip-path: polygon(100% 0,0 100%,0 0); */
+            
+             /* clip-path: polygon(30% 10%,50% 10%,80% 20%,0% 20%);  */
+             /* clip-path: polygon(50% 0,100% 50%, 0 50%); */
+            
+             /* Pagina para ayudar a construir poligonos  https://bennettfeely.com/clippy/ */
+             clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+
+        }
+        .box:hover .box_item{
+            transition: 1.5s;
+
+            clip-path: polygon(0% 0%, 0% 100%, 14% 100%, 11% 8%, 88% 7%, 89% 88%, 12% 88%, 14% 100%, 100% 100%, 100% 0%);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box_item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, asperiores
+        </div>
+    </div>
+</body>
+
+</html>

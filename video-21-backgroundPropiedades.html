@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	
+	[class^="bg-"]{
+		width: 150px;
+		height: 150px;
+		border: 1px solid red;
+		display: inline-block;
+		box-sizing: border-box;
+
+	}
+	body{
+		padding-bottom: 150em;
+		text-align: center;
+	}
+
+	.bg-color{
+		background-color:red;
+	}
+	.bg-image{
+		background-image: url(images/homero.png);
+	}
+	.bg-size{
+		background-image: url(images/homero.png);
+
+		/*se ajusta la imagen sin deformarse si no cabe se sale
+		background-size:cover;
+		*/
+		/*size
+		se ajusta la imagen sin deformarse y se repite para cubrir todo el espacio
+		background-size:contain; 
+ 		*/
+
+
+ 		/*
+ 		Se le dan dimensiones a la imagen manualmente
+ 		*/
+ 		background-size:10% 10%;
+		
+	}
+	.bg-repeat{
+		background-image: url(images/homero.png);
+		background-size: 60%;
+		/*no-repeat no se repite
+		background-repeat: no-repeat;
+		*/
+		/* solo se repite en el eje x
+		background-repeat: repeat-x;
+		*/
+
+		/*se repite en el eje y
+		background-repeat: repeat-y;
+		*/
+	}
+	.bg-position{
+		background-image: url(images/homero.png);
+		background-size: 60%;
+		background-repeat: no-repeat;
+		/*posiciona la imagen*/
+		/*
+		background-position: bottom left;
+		*/
+		background-position: 60px 70px;
+
+
+	}
+	.bg-clip{
+		border:10px dotted red;
+		background-size: contain;
+				background-image: url(images/homero.png);
+
+		/*
+		background-clip: content-box;
+		*/
+		/*
+		background-clip:border-box;
+		*/
+		background-clip: padding-box;
+		padding: 20px;
+
+
+	}
+
+	.bg-origin{
+		border:10px dotted red;
+		background-size: contain;
+		background-image: url(images/homero.png);
+
+		/*
+		background-clip: content-box;
+		*/
+		/*
+		background-clip:border-box;
+		*/
+		background-origin: : padding-box;
+		padding: 20px;
+		background-repeat: no-repeat;
+
+	}
+
+	.bg-attachment{
+		width: 100%;
+		height: 400px;
+		background-image: url(images/homero.png);
+		background-attachment: fixed;
+	
+	}
+</style>
+</head>
+<body>
+
+	<!--
+	<h1>Backgrounds</h1>
+	<div class="bg-color">contenido</div>
+	<div class="bg-image">contenido</div>
+	<div class="bg-size">contenido</div>
+
+	<div class="bg-repeat">contenido</div>
+	<div class="bg-position">contenido</div>
+	
+	<div class="bg-origin">contenido</div>
+	<div class="bg-clip">contenido</div>
+	<div class="bg-multiple">contenido</div>
+-->
+
+	<div class="bg-attachment">contenido</div>
+
+
+
+</body>
+</html>

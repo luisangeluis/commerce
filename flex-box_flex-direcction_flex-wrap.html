@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box video 37</title>
+    <style>
+        .flex-container{
+            background-color: lightcoral;
+            padding: .5em 0;
+
+            /*Hace que los elementos hijos sean flexibles*/
+            display: flex;
+            /* display: inline-flex; */
+
+            /*Modifican el main acsis revisar documentacion (Su direccion y orientacion)*/
+            flex-direction:row;
+            /*Hace que salten los elementos que no quepan*/
+            flex-wrap: wrap;
+            
+            
+        }
+        .flex-item{
+            width: 30px;
+            height: 30px;
+            background-color: brown;
+            margin: .5em;
+            line-height: 30px;
+            color: aliceblue;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body >
+    <span>Ejemplo</span>
+
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+        <div class="flex-item">9</div>
+        <div class="flex-item">10</div>
+
+    </div>
+</body>
+</html>

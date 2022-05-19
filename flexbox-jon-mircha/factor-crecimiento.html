@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factor de crecimiento</title>
+    <style>
+        body {
+            background-color: lightskyblue;
+        }
+        
+        * {
+            padding: 0;
+        }
+        
+        .section {
+            background-color: gray;
+            width: 90%;
+            height: 20vh;
+            box-sizing: border-box;
+            display: flex;
+            /* flex-direction: column; */
+        }
+        
+        .section-1 {
+            
+        }
+        
+        .article-item {
+            box-sizing: border-box;
+            border: 2px lightcoral solid;
+            background-color: whitesmoke;
+
+            /*El espacio sobrante se divide entre los hijos si a un hijo le pones por ejemplo el valor
+             de 2 ese hijo aprovechara al doble el espacio sobrante*/
+            flex-grow: 1;
+           
+        }
+        .article-item:nth-child(2){
+            background-color: red;
+            flex-grow: 2;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section section-1">
+        <article class="article-item">flex item 1</article>
+        <article class="article-item">flex item 2</article>
+        <article class="article-item">flex item 3</article>
+        <article class="article-item">flex item 4</article>
+        <article class="article-item">Lorem ipsum dolor sit amet.</article>
+        <article class="article-item">flex item 6</article>
+
+    </div>
+    
+    
+
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factor de reduccion</title>
+    <style>
+        body {
+            background-color: lightskyblue;
+        }
+        
+        * {
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .section {
+            background-color: gray;
+            width: 90%;
+            height: 20vh;
+            display: flex;
+            /* flex-direction: column; */
+        }
+        
+        .article-item {
+            border: 2px lightcoral solid;
+            background-color: whitesmoke;
+            /*Es la habilidad del hijo de encogerse cuando hay menos espacio del necesario para los hijos*/
+            /*Es una propiedad del hijo*/
+            /*Si pones en 0 */
+            /*Se usa con valores de 1 hacia arriba*/
+            flex-shrink: 1;
+           
+        }
+        .article-item:nth-child(2){
+            background-color: red;
+            /*Pierde el doble de espacio al encoger PERO DEL ESPACIO RESTANTE que los demas*/
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section section-1">
+        <article class="article-item">flex item 1 Lorem, ipsum dolor.</article>
+        <article class="article-item">flex item 2 Lorem, ipsum dolor.</article>
+        <article class="article-item">flex item 3 Lorem, ipsum dolor.</article>
+        <article class="article-item">flex item 4 Lorem, ipsum dolor.</article>
+        <article class="article-item">flex item 4 Lorem, ipsum dolor.</article>
+        <article class="article-item">flex item 6 Lorem, ipsum dolor.</article>
+
+    </div>
+    
+    
+
+
+</body>
+
+</html>

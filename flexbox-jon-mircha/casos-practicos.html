@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos practicos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        header,
+        footer {
+            background-color: black;
+            color: white;
+            min-height: 7vh;
+        }
+
+        body,html {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        h2 {
+            padding: 1rem;
+        }
+
+        header {
+            /* display: flex; */
+        }
+
+        .main-logo {
+            /* text-align: center; */
+            padding: 1rem;
+        }
+
+        .main-nav {
+            padding: .5rem 1rem;
+            
+        }
+
+        .item-ul {
+            padding: .5rem 1rem;
+        }
+
+        .item-ul a{
+            padding: .5rem 1rem;
+            color: #fff;
+        }
+
+        .hero-image {
+            min-height: 75vh;
+            background-image: url('https://placeimg.com/1280/720/animals');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+            color: #fff;
+
+            
+        }
+
+        .hero-image div {
+            /* hereda la altura de su padre */
+            min-height: inherit;
+            background-color: rgba(0, 0, 0, .75);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .main-title {
+            font-size: 5vw;
+
+        }
+
+        @media screen and (min-width:992px) {
+            header {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .main-logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 1rem;
+            }
+
+            .main-nav {
+                display: flex;
+            }
+
+            .main-ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: .5rem 1rem;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="main-logo">Logo</h1>
+        <nav class="main-nav">
+            <ul class="main-ul">
+                <li class="item-ul"><a href="#">item 1</a></li>
+                <li class="item-ul"><a href="#">item 2</a></li>
+                <li class="item-ul"><a href="#">item 3</a></li>
+                <li class="item-ul"><a href="#">item 4</a></li>
+                <li class="item-ul"><a href="#">item 4</a></li>
+
+                <li class="item-ul"><a href="#">item 4</a></li>
+
+                <li class="item-ul"><a href="#">item 4</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, deserunt.
+        </p> -->
+
+        <div class="hero-image">
+            <div>
+                <h1 class="main-title">Ejemplo de hero image</h1>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2 class="subtitulo">Footer</h2>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factor de reduccion</title>
+    <style>
+        body {
+            background-color: lightskyblue;
+        }
+        
+        * {
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .section {
+            background-color: lightcoral;
+            width: 90%;
+            height: 20vh;
+            display: flex;
+            /* flex-direction: column-reverse; */
+        }
+        
+        .article-item {
+            border: 2px black solid;
+            background-color: lightblue;
+            
+        }
+        .article-item:nth-child(2){
+
+            background-color: red;
+            
+            /*Valor por defecto 0*/
+            /*Es referente al main axis*/
+            order:-1;
+
+            /*Se alinea respecto al cross-axis*/
+            align-self: flex-end;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section section-1">
+        <article class="article-item">flex item 1 Lorem</article>
+        <article class="article-item">flex item 2 Lorem</article>
+        <article class="article-item">flex item 3 Lorem</article>
+        <article class="article-item">flex item 4 Lorem</article>
+        <article class="article-item">flex item 5 Lorem</article>
+
+    </div>
+    
+    
+
+
+</body>
+
+</html>

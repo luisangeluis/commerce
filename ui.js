@@ -24,4 +24,9 @@ function printProducts(products,container) {
     container.innerHTML = html;
 }
 
+function toggleMenu(){
+    const menu = document.getElementById('menu');
+    
+}
+
 export{printProducts}

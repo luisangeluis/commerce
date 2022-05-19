@@ -31,14 +31,14 @@ const getProducts = async () => {
 const createProduct = () => {
     let name = document.querySelector('#name').value;
     let price = document.querySelector('#price').value;
-    // let image = document.querySelector('#image').value;
+    let image = document.querySelector('#image').value;
 
     // console.log(image);
 
     const product = {
         name,
         price,
-        image: 'https://www.pngmart.com/files/13/Smartwatch-Gadget-PNG-Clipart.png',
+        image
     }
 
 
@@ -87,7 +87,7 @@ function updateProduct() {
     const productEdited = {
         name: formEdit.querySelector('#name').value,
         price: formEdit.querySelector('#price').value,
-        image: formEdit.querySelector('#img-edit').src
+        image: formEdit.querySelector('#image').value
     }
 
     axios.put(`${url}/${editingID}`, productEdited)

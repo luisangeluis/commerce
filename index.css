@@ -1,0 +1,22 @@
+
+.products-container .col{
+    padding: .5rem;
+}
+.products-container .card{
+    height: 17rem;
+    max-width: 100%;
+    padding: .5rem;
+
+
+}
+.products-container .card .card-body{
+    height: 50%;
+    
+}
+
+.products-container .card img{
+    max-height: 100%;
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}

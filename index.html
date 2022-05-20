@@ -17,20 +17,21 @@
 
 <body>
     <nav id="home" class="main-nav">
-        <div id="toggle-menu" class="toggle-menu">
-            <i class="fas fa-shopping-cart"></i>
-        </div>
+        <button id="toggle-menu" class="toggle-menu btn btn-success">
+            <i class="fa-solid fa-cart-shopping fa-x2"></i>
+        </button>
         <div class="fondodenav main-menu" id="main-menu">
 
         </div>
     </nav>
-    <main class="container">
+    <main class="container py-5 ">
         <div class="row">
-            <div id="menu" class="text-end py-3">
+           <!-- <div id="menu" class="text-end py-3">
                 <button onclick="toggleMenu()" class="icon cart shopping btn btn-success">
                     <i class="fa-solid fa-cart-shopping fa-lg"></i>
                 </button>
             </div>
+            -->
             <div class="bg-danger text-center bg-opacity-75 border-bottom-3 rounded ">
                 <img src="https://ciberseguridadenlinea.com/wp-content/uploads/2022/02/DD-Roster-011-Logotipo_Academlo-02-1.png" alt="Academlo logo">
             </div>
@@ -41,7 +42,7 @@
                         <h2>Crear producto</h2>
                         <form class="w-75 mx-auto" onsubmit="event.preventDefault(), createProduct()">
                             <div class="card">
-                                <div class="card-body">
+                                <div class="card-body shadow p-3 mb-5 bg-body rounded">
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Nombre del producto</label>
                                         <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
@@ -66,7 +67,7 @@
                         <h2>Editar producto</h2>
                         <form class="w-75 mx-auto" onsubmit="event.preventDefault(), updateProduct()" id="form-edit">
                             <div class="card">
-                                <div class="card-body">
+                                <div class="card-body shadow p-3 mb-5 bg-body rounded">
                                     <img alt="imagen-producto" id="img-edit" class="img-fluid">
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Nombre del producto</label>

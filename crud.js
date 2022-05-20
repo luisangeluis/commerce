@@ -20,7 +20,7 @@ const getProducts = async () => {
     getData(url)
         .then(response => {
             let products = response.data;
-            console.log(products);
+            // console.log(products);
             printProducts(products, containerProducts);
         })
         .catch(error => {
@@ -100,15 +100,14 @@ function updateProduct() {
         })
 }
 
-const addToCart = (id) =>{
-    console.log('hola');
-
-
-   // tome el id del producto cuando de click y llevar al botton de cart como text ocupando local storage y despues
-   //combertirlo de texto a un objeto ocupan JSON.parce / de objeto a texto json.stringify
+// const addToCart = (id) =>{
     
-}
+//     console.log(id);
+//    // tome el id del producto cuando de click y llevar al botton de cart como text ocupando local storage y despues
+//    //combertirlo de texto a un objeto ocupan JSON.parce / de objeto a texto json.stringify
+    
+// }
 
 
 
-export { getProducts, createProduct, editProduct,updateProduct,deleteProduct, addToCart };
+export { getProducts, createProduct, editProduct,updateProduct,deleteProduct};

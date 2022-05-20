@@ -20,7 +20,7 @@ const getProducts = async () => {
     getData(url)
         .then(response => {
             let products = response.data;
-            console.log(products);
+            // console.log(products);
             printProducts(products, containerProducts);
         })
         .catch(error => {

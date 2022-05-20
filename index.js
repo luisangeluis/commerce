@@ -1,5 +1,5 @@
 import { getProducts,createProduct,editProduct,updateProduct,deleteProduct} from "./crud.js";
-import { getProduc } from "./comprar.js";
+import { addToCart,removeToCar } from "./comprar.js";
 
 const toggleMenuElement = document.getElementById('toggle-menu');
 const mainMenuElement = document.getElementById('main-menu');
@@ -15,5 +15,7 @@ window.createProduct = createProduct;
 window.editProduct = editProduct;
 window.updateProduct = updateProduct;
 window.deleteProduct =deleteProduct;
-window.getProduc = getProduc;
+window.addToCart = addToCart;
+window.removeToCar = removeToCar;
+
 getProducts();

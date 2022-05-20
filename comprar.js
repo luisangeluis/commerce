@@ -1,20 +1,30 @@
-import { printProduct } from "./ui.js";
+import { printProductsToCar, printProduct } from "./ui.js";
 
-const addToCart = (product) => {
-    const carrito = document.querySelector('#main-menu');
-    printProduct(product, carrito);
-}
+const carrito = document.querySelector('#main-menu');
+let addedProducts = [];
 
-const getProduc =async(id) => {
+console.log(addedProducts);
+
+const addToCart = (id) => {
     let product = {};
     axios.get(`https://e-commerce-api-academlo.herokuapp.com/api/products/${id}`)
         .then(response => {
-            console.log(response.data);
-            // product = response;
-            product = response.data
+            product = response.data;
+            let productAsText = JSON.stringify(product);
+            localStorage.setItem(`${product.id}`,productAsText);
 
-            addToCart(product)
+            carrito.innerHTML ="";
 
+            for(let i =0; i<localStorage.length;i++){
+                let key = localStorage.key(i);
+
+                if(!carrito.querySelector('#key')){
+                    let value = JSON.parse(localStorage.getItem(key));
+                    console.log(value);
+                    printProduct(value,carrito);
+                }
+            }
+           
         }).catch(error => {
             console.log(error);
 
@@ -22,4 +32,25 @@ const getProduc =async(id) => {
     return product;
 }
 
-export { getProduc };
+const removeToCar = (id) => {
+    for(let i =0; i<localStorage.length;i++){
+
+        let key = localStorage.key(i);
+
+        if(id == key){
+            localStorage.removeItem(key);
+        }
+    }
+
+    carrito.innerHTML ='';
+    for(let i =0; i<localStorage.length;i++){
+
+        let key = localStorage.key(i);
+        let value = JSON.parse(localStorage.getItem(key));
+
+        printProduct(value,carrito);
+    }
+}
+
+
+export { addToCart, removeToCar };

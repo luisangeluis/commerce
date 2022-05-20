@@ -100,7 +100,15 @@ function updateProduct() {
         })
 }
 
+const addToCart = (id) =>{
+    console.log('hola');
+
+
+   // tome el id del producto cuando de click y llevar al botton de cart como text ocupando local storage y despues
+   //combertirlo de texto a un objeto ocupan JSON.parce / de objeto a texto json.stringify
+    
+}
 
 
 
-export { getProducts, createProduct, editProduct,updateProduct,deleteProduct };
+export { getProducts, createProduct, editProduct,updateProduct,deleteProduct, addToCart };

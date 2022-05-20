@@ -15,7 +15,7 @@ function printProducts(products,container) {
                                 <button class="btn btn-primary" onclick="editProduct(${product.id})">
                                     <i class="fas fa-pen"></i>
                                 </button>
-                                <button class="btn btn-success">
+                                <button class="btn btn-success" onclick="addToCart(${product.id})">
                                     <i class="fa-solid fa-cart-plus"></i>
                                 </button>
                             </div>
@@ -27,9 +27,6 @@ function printProducts(products,container) {
     container.innerHTML = html;
 }
 
-function toggleMenu(){
-    const menu = document.getElementById('menu');
-    
-}
+
 
 export{printProducts}

@@ -1,3 +1,20 @@
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #b31515;
+}
+
 
 .products-container .col{
     padding: .5rem;
@@ -6,7 +23,7 @@
     height: 17rem;
     max-width: 100%;
     padding: .5rem;
-
+    box-shadow: rgba(0, 0, 0, 0.192) 0px 5px 15px;
 
 }
 .products-container .card .card-body{
@@ -26,62 +43,91 @@
     max-width: 40%;
 }
 
-
+.bg-red{
+    background-color: #EB4A5A;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
 
 .toggle-menu i{
     
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .toggle-menu{
     width: 40px;
-    position: absolute;
+    position: fixed;
     top: 0.5rem;
-    right: 1rem;
+    right: 1.5rem;
     cursor: pointer;
     z-index: 1003;
 }
 
 .main-menu {
-    position: absolute;
+    position: fixed;
     top: 0rem;
     right: 0rem;
-    list-style: none;
     margin-top: 0;
     width: 40%;
     height: 100%;
-    border-radius: 20px 0 0px 20px;
+    /* border-radius: 20px 0 0px 20px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding-left: 0;
     transition: transform 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     backdrop-filter: blur(30px);
-    background-color: rgba(53, 152, 233, 0.911);
-    transform: translateY(-100%);
+    background-color: rgba(255, 255, 255, 0.466);
+    transform: translateY(-110%);
     z-index: 1002;
-    justify-content: space-around;
+    overflow: auto;
 }
 
-.main-menu__item{
-    padding: 1em;
-    text-align: center;
-    
-}
-.main-menu__link:hover{
-    color: azure;
-    border-bottom: 2px solid white;
-}
-.main-menu__link {
-    color: rgb(224, 224, 224);
-    font-size: 1.5rem;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif; 
-     /* font-weight:600;     */
-}
+
 
 .main-menu--show{
     transform: translateY(0);
 }
 
+.main-menu img{
+    max-width: 100px;
+    max-height: 100px;
+}
 
+.main-menu .card{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.centrar-texto{
+    text-align: center;
+}
+.logo img{
+    margin: 10px 20px;
+}
+
+@media (max-width: 800px){
+    .main-menu .card{
+        
+        width: 200px;
+    }
+    .card img{
+        width: 100px;
+        height: 100px;
+    }
+    .main-menu{
+        width: 70%;
+    }
+
+}

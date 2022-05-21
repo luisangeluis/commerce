@@ -36,8 +36,8 @@ function printProduct(product, container) {
                         <div class="card-body d-flex flex-column justify-content-end">
                             <h5 class="card-title">${product.name}</h5>
                             <p class="card-text">${product.price}</p>
-                            <div class="text-end">
-                                <button class="btn btn-success" onclick="removeToCar(${product.id})">
+                            <div class="text-center">
+                                <button class="btn btn-danger" onclick="removeToCar(${product.id})">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                             </div>
@@ -58,7 +58,7 @@ function printProductsToCar(products, container) {
                         <div class="card-body d-flex flex-column justify-content-end">
                             <h5 class="card-title">${product.name}</h5>
                             <p class="card-text">${product.price}</p>
-                            <div class="text-end">
+                            <div class="text-center">
                                 <button class="btn btn-danger" onclick="removeToCar(${product.id})">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>

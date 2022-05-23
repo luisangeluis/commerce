@@ -3,7 +3,7 @@ function printProducts(products, container) {
     let html = '';
     products.forEach(product => {
         html += `<div class="col-md-6 col-lg-4 mt-3">
-                    <div class="card">
+                    <div class="card border-info mb-3 shadow p-3 mb-5 bg-body rounded" >
                         <img src="${product.image}" class="img-fluid">
                         <div class="card-body d-flex flex-column justify-content-end">
                             <h5 class="card-title">${product.name}</h5>
